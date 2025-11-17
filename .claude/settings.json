@@ -1,0 +1,16 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash(composer:*)",
+      "Bash(vendor/bin/phpunit:*)",
+      "Bash(vendor/bin/phpcbf:*)",
+      "Bash(docker-compose:*)",
+      "Bash(docker:*)",
+      "Bash(npm:*)",
+      "Bash(git:*)",
+      "WebSearch",
+      "WebFetch"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+../../.flowji-ai/registry/ai-commands.md

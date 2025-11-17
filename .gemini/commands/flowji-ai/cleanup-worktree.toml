@@ -1,0 +1,10 @@
+name = "cleanup-worktree"
+description = "Remove worktree after PR merge"
+
+[command]
+type = "shell"
+command = "bash scripts/cleanup-worktree.sh"
+args = ["${input}"]
+
+[input]
+prompt = "Feature name (optional: --force --delete-branch):"

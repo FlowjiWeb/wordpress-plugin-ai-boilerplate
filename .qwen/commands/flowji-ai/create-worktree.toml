@@ -1,0 +1,26 @@
+description = "Create worktree for parallel multi-agent development"
+
+prompt = """
+Create a new git worktree for parallel development with multiple AI agents.
+
+Execute the centralized script:
+```bash
+bash scripts/create-worktree.sh {{args}}
+```
+
+The script will:
+- Ensure it's running from repo root
+- Fetch the base branch (default: origin/main)
+- Create worktree in ../mpc-<feature-name>
+- Create branch feature/<feature-name> based on the base branch
+- Display next steps
+
+Optional flags:
+- --base <branch> - Branch from a different base (e.g., --base origin/release-1.0)
+
+Report the result to the user including:
+- Worktree directory path
+- Branch name
+- Base branch used
+- Next steps (cd to directory, start agent)
+"""

@@ -1,0 +1,10 @@
+name = "create-worktree"
+description = "Create worktree for parallel multi-agent development"
+
+[command]
+type = "shell"
+command = "bash scripts/create-worktree.sh"
+args = ["${input}"]
+
+[input]
+prompt = "Feature name (optional: --base <branch>):"
